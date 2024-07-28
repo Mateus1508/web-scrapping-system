@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Web Scraping System</h1>
+    <p>Add a URL below to see information about the site you want.</p>
+    <div class="search-box">
+        <h2>Insert the target url below</h2>
+        <input type="text" class="input-url" placeholder="https://www.example.com">
+        <button id="btn-generate">Generate report</button>
+    </div>
+    <div class="loading" style="display: none;"></div>
+    <div class="report">
+        <h2 class="title-report">Report</h2>
+        <div class="report-item">
+            <label for="title">Title</label>
+            <h2 class="title"></h2>
+        </div>
+        <div class="report-item">
+            <label for="">Meta description</label>
+            <p class="meta-description"></p>
+        </div>
+        <div class="report-item">
+            <label for="links">Links</label>
+            <ul class="links">
+            </ul>
+        </div>
+        <div class="report-item">
+            <label for="images">Images</label>
+            <ul class="images">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
